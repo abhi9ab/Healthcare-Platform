@@ -43,7 +43,6 @@ const RegisterForm = ({ user }: { user: User }) => {
   const onSubmit = async (values: z.infer<typeof PatientFormValidation>) => {
     setIsLoading(true);
 
-    // Store file info in form data as
     let formData;
     if (
       values.identificationDocument &&
