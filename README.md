@@ -19,8 +19,14 @@ A healthcare patient management application built using Next.js, TypeScript, and
 
 **File Upload Using Appwrite Storage**: Users can upload and store files securely within the app using Appwrite storage services.   
 
-**Manage and Track Application Performance Using Sentry**: The application uses Sentry to monitor and track its performance and detect errors.  
+**Manage and Track Application Performance Using Sentry**: The application uses Sentry to monitor and track its performance and detect errors##.  
 
+## Screenshots:
+
+![careplus 4](https://github.com/user-attachments/assets/5b309b2b-4c6d-4f6b-8a4b-b69a1f1cb405)  
+![careplus 3](https://github.com/user-attachments/assets/6b6500e6-c47b-4f7b-a5af-9f601804dba7)  
+![careplus 2](https://github.com/user-attachments/assets/b48a0f63-8650-4392-bd17-d05b681fab76)  
+![careplus 1](https://github.com/user-attachments/assets/6d664cb2-487a-4ca3-a4d3-0e16e9871dc8)  
 
 ## Getting Started
 
