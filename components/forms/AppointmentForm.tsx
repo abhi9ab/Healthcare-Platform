@@ -69,7 +69,7 @@ export const AppointmentForm = ({
       default:
         status = "pending";
     }
-
+    console.log("Im here", type, patientId);
     try {
       if (type === "create" && patientId) {
         const appointment = {
@@ -126,7 +126,7 @@ export const AppointmentForm = ({
       buttonLabel = "Schedule Appointment";
       break;
     default:
-      buttonLabel = "Submit Appointment";
+      buttonLabel = "Submit Appointment"; 
   }
 
   return (
