@@ -90,10 +90,11 @@ export const AppointmentForm = ({
             `/patients/${userId}/new-appointment/success?appointmentId=${newAppointment.$id}`
           );
         }
-      } else {
+      } else if (appointment?.$id) {
         const appointmentToUpdate = {
           userId,
-          appointmentId: appointment?.$id!,
+          appointmentId: appointment?.$id,
+          timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
           appointment: {
             primaryPhysician: values.primaryPhysician,
             schedule: new Date(values.schedule),
@@ -125,7 +126,7 @@ export const AppointmentForm = ({
       buttonLabel = "Schedule Appointment";
       break;
     default:
-      buttonLabel = "Submit Apppointment";
+      buttonLabel = "Submit Appointment";
   }
 
   return (

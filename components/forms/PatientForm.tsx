@@ -1,16 +1,18 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+
 import { Form } from "@/components/ui/form";
 import { createUser } from "@/lib/actions/patient.actions";
+import { UserFormValidation } from "@/lib/validation";
+
 import "react-phone-number-input/style.css";
 import CustomFormField, { FormFieldType } from "../CustomFormField";
 import SubmitButton from "../SubmitButton";
-import { UserFormValidation } from "@/lib/validation";
 
 export const PatientForm = () => {
   const router = useRouter();
@@ -70,7 +72,7 @@ export const PatientForm = () => {
           control={form.control}
           name="email"
           label="Email"
-          placeholder="abhinabdas004@gmail.com"
+          placeholder="johndoe@gmail.com"
           iconSrc="/assets/icons/email.svg"
           iconAlt="email"
         />
@@ -80,7 +82,7 @@ export const PatientForm = () => {
           control={form.control}
           name="phone"
           label="Phone number"
-          placeholder="9998888777"
+          placeholder="(555) 123-4567"
         />
 
         <SubmitButton isLoading={isLoading}>Get Started</SubmitButton>

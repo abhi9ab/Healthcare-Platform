@@ -31,4 +31,4 @@ export const StatCard = ({ count = 0, label, icon, type }: StatCardProps) => {
       <p className="text-14-regular">{label}</p>
     </div>
   );
-};  
+};
